@@ -1,0 +1,10 @@
+<h2>What do you want?</h2>
+
+<%= form_tag '/cart', method: "post" %>
+<%= label_tag 'i want this thing: ' %>
+<%= text_field_tag 'product' %>
+<%= submit_tag 'add to cart' %>
+
+<br>
+
+<h4><%= link_to "Click here to see all the things you want", products_path %></h4>

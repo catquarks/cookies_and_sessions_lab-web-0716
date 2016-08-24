@@ -1,0 +1,9 @@
+<%= link_to "Click here to ask for more things", index_path %>
+
+<h2>Your shopping cart</h2>
+
+<ul>
+	<% @cart.each do |item| %>
+		<li><%= item %></li>
+	<% end %>
+</ul>

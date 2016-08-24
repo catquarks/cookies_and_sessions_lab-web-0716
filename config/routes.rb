@@ -1,4 +1,8 @@
-Rails.application.routes.draw do
+Rails.application.routes.draw do 
+  get '/', to: 'application#index', as: 'index'
+  get '/cart', to: 'application#cart'
+  post '/cart', to: 'application#add_to_cart'
+  get '/products', to: 'products#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
